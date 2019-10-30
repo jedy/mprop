@@ -4,17 +4,21 @@
 # 用法
 ```bash
 adb push mprop /data/local/tmp/
-adb shell "chmod 755 /data/local/tmp/mprop"
-
+adb shell
+```
+```bash
+# in adb shell
+chmod +x /data/local/tmp/mprop
+su
 # inject & hack
-adb shell "/data/local/tmp/mprop"
+/data/local/tmp/mprop
 
 # verbose mode ==> dump memory 
-# adb shell "/data/local/tmp/mprop -v" > myprop.txt
+# /data/local/tmp/mprop -v > myprop.txt
 
 # restore
-# adb shell "/data/local/tmp/mprop -r"
+# /data/local/tmp/mprop -r
 
 # change ro.xx property
-adb shell "setprop ro.debuggable 1"
+setprop ro.debuggable 1
 ```
