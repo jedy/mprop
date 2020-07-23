@@ -1,5 +1,6 @@
 # mprop
-修改android系统属性。网上找到的，原始出处不明。如果是作者，可以和我联系加上说明。
+修改android系统属性。
+转自 https://bbs.pediy.com/thread-215311.htm
 
 # 用法
 ```bash
